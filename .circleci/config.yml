@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: golang:1.16
+    steps:
+      - checkout
+      - run:
+          name: Build Go binary
+          command: go build -o gin-sql-admin
+      - run:
+          name: Build Docker image
+          command: |
+            docker build -t gin-sql-admin:latest
+            docker login -u jerrt2003 -p uLAP8BDz3eRmy7y
+            docker push gin-sql-admin:latest
