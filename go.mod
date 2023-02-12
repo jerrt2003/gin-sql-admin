@@ -1,4 +1,4 @@
-module github.com/jerrt2003/go/gin-sql-admin
+module github.com/jerrt2003/gin-sql-admin
 
 go 1.19
 

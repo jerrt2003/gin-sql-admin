@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/jerrt2003/go/gin-sql-admin/go/controller"
+	"github.com/jerrt2003/gin-sql-admin/go/controller"
 )
 
 func SetRouter() *gin.Engine {

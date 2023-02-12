@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/jerrt2003/go/gin-sql-admin/go/dao"
-	"github.com/jerrt2003/go/gin-sql-admin/go/entity"
+	"github.com/jerrt2003/gin-sql-admin/go/dao"
+	"github.com/jerrt2003/gin-sql-admin/go/entity"
 )
 
 func CreateUser(user *entity.User) (err error) {

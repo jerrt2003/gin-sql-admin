@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/jerrt2003/go/gin-sql-admin/go/entity"
-	"github.com/jerrt2003/go/gin-sql-admin/go/service"
+	"github.com/jerrt2003/gin-sql-admin/go/entity"
+	"github.com/jerrt2003/gin-sql-admin/go/service"
 )
 
 func CreateUser(c *gin.Context) {

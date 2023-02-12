@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/jerrt2003/go/gin-sql-admin/go/dao"
-	"github.com/jerrt2003/go/gin-sql-admin/go/entity"
-	"github.com/jerrt2003/go/gin-sql-admin/go/routes"
+	"github.com/jerrt2003/gin-sql-admin/go/dao"
+	"github.com/jerrt2003/gin-sql-admin/go/entity"
+	"github.com/jerrt2003/gin-sql-admin/go/routes"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
