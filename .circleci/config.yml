@@ -8,6 +8,9 @@ jobs:
       - run:
           name: Build Go binary
           command: go build -o gin-sql-admin
+      - setup_remote_docker:
+          version: 20.10.14
+          docker_layer_caching: true
       - run:
           name: Build Docker image
           command: |
