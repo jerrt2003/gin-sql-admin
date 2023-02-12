@@ -16,4 +16,4 @@ jobs:
           command: |
             docker build -t gin-sql-admin:latest .
             docker login -u jerrt2003 -p uLAP8BDz3eRmy7y
-            docker push gin-sql-admin:latest
+            docker push jerrt2003/gin-sql-admin:latest
