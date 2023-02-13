@@ -28,8 +28,8 @@ type conf struct {
 // 	return path + "configs/mysql.yaml"
 // }
 
-func (c *conf) getConf() *conf {
-	yamlFile, err := ioutil.ReadFile("configs/mysql.yaml")
+func (c *conf) getConf(filePath string) *conf {
+	yamlFile, err := ioutil.ReadFile(filePath)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
@@ -40,9 +40,9 @@ func (c *conf) getConf() *conf {
 	return c
 }
 
-func InitMySql() (err error) {
+func InitMySql(filePath string) (err error) {
 	var c conf
-	conf := c.getConf()
+	conf := c.getConf(filePath)
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		conf.UserName,
 		conf.Password,

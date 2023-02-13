@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	"github.com/jerrt2003/gin-sql-admin/go/dao"
 	"github.com/jerrt2003/gin-sql-admin/go/entity"
 	"github.com/jerrt2003/gin-sql-admin/go/routes"
@@ -8,7 +10,9 @@ import (
 )
 
 func main() {
-	err := dao.InitMySql()
+	args := os.Args[1:]
+	sqlConfig := args[0]
+	err := dao.InitMySql(sqlConfig)
 	if err != nil {
 		panic(err)
 	}
