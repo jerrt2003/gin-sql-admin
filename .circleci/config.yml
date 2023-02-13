@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Build Go binary
-          command: go build -o gin-sql-admin
+          command: GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o gin-sql-admin
       - setup_remote_docker:
           version: 20.10.14
           docker_layer_caching: true
