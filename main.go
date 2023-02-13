@@ -17,6 +17,7 @@ func main() {
 		panic(err)
 	}
 	defer dao.Close()
+	// 為什麼這邊建的dao.SqlSession其他的也可以用呢:(我的想法)因為在Go同一個pkg下都是所有的func都可以被main access
 	dao.SqlSession.AutoMigrate(&entity.User{})
 	r := routes.SetRouter()
 	r.Run(":8081")
