@@ -1,5 +1,5 @@
-host: 127.0.0.1
+host: my-release-mysql.test.svc.cluster.local
 port: 3306
 username: root
-password: password
+password: pr8CVpBmWB
 dbname: test
